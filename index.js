@@ -36,7 +36,8 @@ app.use('/players', service({
     max: 50
   }
 }));
-app.use('/food', service({
+
+app.use('/foods', service({
   Model: Food,
   paginate: {
     default: 30,
