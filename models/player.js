@@ -2,19 +2,19 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var PlayerSchema = new Schema({
-  r: {type: Integer, required: true},
-  cx: {type: Integer, required: true},
-  cy: {type: Integer, required: true},
-  nx: {type: Integer, required: true},
-  ny: {type: Integer, required: true},
+  r: {type: Number, required: true},
+  cx: {type: Number, required: true},
+  cy: {type: Number, required: true},
+  nx: {type: Number, required: true},
+  ny: {type: Number, required: true},
   fill: {type: String, required: true},
   stroke: {type: String, required: true},
-  stroke_width: {type: Integer, required: true},
+  stroke_width: {type: Number, required: true},
   name: {type: String, required: true},
-  food_eaten: {type: Integer, required: true},
-  time_alive: {type: Integer, required: true},
-  delay: {type: Integer, required: true},
-  ranking: {type: Integer, required: true},
+  food_eaten: {type: Number, required: true},
+  time_alive: {type: Number, required: true},
+  delay: {type: Number, required: true},
+  ranking: {type: Number, required: true},
 
   createdAt: {type: Date, 'default': Date.now},
   updatedAt: {type: Date, 'default': Date.now}

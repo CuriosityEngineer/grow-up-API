@@ -8,7 +8,8 @@ const mongoose = require('mongoose');
 const service = require('feathers-mongoose');
 
 // Require your models
-const Game = require('./models/game');
+const Player = require('./models/player');
+const Food = require('./models/food');
 
 // Tell mongoose to use native promises
 // See http://mongoosejs.com/docs/promises.html
@@ -28,8 +29,15 @@ const app = feathers()
   // Turn on URL-encoded parser for REST services
   .use(bodyParser.urlencoded({extended: true}));
 
-app.use('/growup', service({
-  Model: Game,
+app.use('/players', service({
+  Model: Player,
+  paginate: {
+    default: 30,
+    max: 50
+  }
+}));
+app.use('/food', service({
+  Model: Food,
   paginate: {
     default: 30,
     max: 50

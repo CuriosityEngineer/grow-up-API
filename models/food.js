@@ -2,11 +2,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var FoodSchema = new Schema({
-  r: {type: Integer, required: true},
-  cx: {type: Integer, required: true},
-  cy: {type: Integer, required: true},
+  r: {type: Number, required: true},
+  cx: {type: Number, required: true},
+  cy: {type: Number, required: true},
   fill: {type: String, required: true},
-  
+
   createdAt: {type: Date, 'default': Date.now},
   updatedAt: {type: Date, 'default': Date.now}
 });
