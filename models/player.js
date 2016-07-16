@@ -15,6 +15,7 @@ var PlayerSchema = new Schema({
   time_alive: {type: String},
   delay: {type: Number},
   ranking: {type: Number},
+  status: {type: String},
 
   createdAt: {type: Date, 'default': Date.now},
   updatedAt: {type: Date, 'default': Date.now}
