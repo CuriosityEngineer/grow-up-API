@@ -9,6 +9,7 @@ Feather's api using Mongodb for a simple game called grow-up
 > npm install
 
 - Check if mongodb is running
+- 
 > ps aux | grep mongo
 
 # if mongodb is not running 
