@@ -1,19 +1,19 @@
-# grow-up-API
-Feather's api using Mongodb for a simple game called grow-up
+# Grow Up API
+Feather's api using Mongodb for a simple game we build called Grow Up. 
 
 -Group Project Collaborators:
-  - Aeshta https://github.com/CuriosityEngineer
-  - Rosiene https://github.com/rosiene/growup-game
-  - Deisi https://github.com/dtolhuijs
+  - [Aeshta](https://github.com/CuriosityEngineer)
+  - [Rosiene](https://github.com/rosiene)
+  - [Deisi](https://github.com/dtolhuijs)
 
-# Set up
+## Set up
 > npm install
 
-- Check if mongodb is running
-- 
+### Check if mongodb is running
+
 > ps aux | grep mongo
 
-# if mongodb is not running 
+### If mongodb is not running 
 > brew update
 
 > brew install mongodb
